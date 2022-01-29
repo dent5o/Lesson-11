@@ -1,0 +1,398 @@
+/* &display=swap - добавить в конце строки при использовании плагина Google Fonts 
+&subset=cyrillic-ext - добавить (без пробела) к выше указанному для работы кириллического начертания*/
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap);
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 16px; /* по умолчанию */
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	line-height: 1;
+	overflow-x: hidden;
+	background: #F5F5F5
+}
+
+.wrapper {
+	min-height: 100%;
+}
+
+/* header */
+
+.header {
+	background: url('../img/bg-main.jpg') center/cover no-repeat;
+	padding: 280px 0px 312px 0px;
+}
+.header__container{
+}
+.container{
+	max-width: 1020px;
+}
+.container_margin {
+	margin: 0px auto;
+}
+.header__title {
+	max-width: 583px;
+	font-weight: 900;
+	font-size: 56px;
+	line-height: 56px;
+	color: #FFFFFF;
+	margin: 0px 0px 48px 0px;
+}
+.header__button {
+	width: 210px;
+}
+.button {
+	position: relative;
+	display: block;
+	padding: 12px 0px 12px 0px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background: #F2726F;
+	filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+	border-radius: 8px;
+}
+.button:focus {
+	outline: none;
+}
+.button::before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 48px;
+	background: rgba(255,255,255,0.3);
+	border-radius: 8px;
+	transition: all 1s ease;
+}
+.button:hover::before {
+	width: 100%;
+}
+
+/* Первая секция */
+
+.who-we-are {
+}
+.who-we-are__container {
+	position: relative;
+	background: #5D62B5 url('../img/section1/Blob.png') -23px 262px no-repeat;
+	border-radius: 40px;
+	padding: 100px 87px 354px 87px;
+	margin: -80px auto 0px;
+}
+.who-we-are__bg-img {
+	position: absolute;
+	top: -109px;
+	right: -76px;
+}
+.container {
+}
+.container_margin {
+}
+.who-we-are__block-title {
+	margin: 0px 0px 37px 0px;
+}
+.title-block {
+}
+.title-block__block-name {
+	position: relative;
+	padding: 0px 0px 0px 33px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	margin: 0px 0px 33px 0px;
+	color: #5D62B5;
+}
+.title-block__block-name::before {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: -2px;
+	left: 0;
+	background: url('../img/logo_reg.svg') 0 0 no-repeat;
+}
+.title-block__block-name_white {
+	color: #F5F5F5;
+	position: relative;
+}
+
+.title-block__block-name_white::before {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: -2px;
+	left: 0;
+	background: url('../img/logo_white.svg') 0 0 no-repeat;
+}
+.title-block__title {
+	max-width: 583px;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #000000;
+}
+.title-block__title_white {
+	color: #F5F5F5;
+}
+.who-we-are__description-text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	color: #F5F5F5;
+}
+.who-we-are__image {
+	display: block;
+	margin: -300px auto 0px;
+	max-width: 846px;
+	filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+	border-radius: 40px;
+	/* margin: 0px 0px -528px 0px; */
+}
+
+/* Вторая секция */
+
+.our-promise {
+	padding: 110px 0px 122px 0px;
+}
+.our-promise__container {
+}
+.container {
+}
+.container_margin {
+}
+.our-promise__block-title {
+	margin: 0px 0px 68px 0px;
+}
+.title-block {
+}
+.title-block__block-name {
+}
+.who-we-are__title {
+}
+.our-promise__list {
+	font-size: 0;
+}
+.promises {
+}
+.promises__item {
+}
+.promises__item:not(:last-child) {
+	margin: 0px 24px 0px 0px;
+}
+.promise-card {
+	max-width: 324px;
+	display: inline-block;
+}
+.promise-card__img {
+	margin: 0px 23px 0px 0px;
+}
+.promise-card__text-content {
+	max-width: 235px;
+	display: inline-block;
+}
+.promise-card__title {
+}
+.title-card-text {
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 26px;
+	color: #F2726F;
+	margin: 0px 0px 20px 0px;
+}
+.promise-card__description {
+}
+.description-card-text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	color: #4B4B4B;
+}
+
+/* Третья секция */
+
+.our-services {
+	padding: 110px 0px 120px 0px;
+	background: url('../img/section3/back-blop.png') 95% 270% no-repeat;
+}
+.our-services__container {
+}
+.container {
+}
+.container_margin {
+}
+.our-services__block-title {
+	margin: 0px 0px 78px 0px;
+}
+.title-block {
+}
+.title-block__block-name {
+}
+.title-block__title {
+}
+.our-services__list {
+	margin: 0px 0px 66px 0px;
+	font-size: 0;
+}
+.services {
+}
+.services__row:not(:last-child) {
+	margin: 0px 0px 24px 0px;
+}
+.services__item:not(:last-child) {
+	margin: 0px 24px 0px 0px;
+}
+.service-card {
+	max-width: 324px;
+	background: #FFFFFF;
+	border-radius: 20px;
+	display: inline-block;
+	text-align: center;
+	padding: 50px 44px 50px 43px;
+}
+.service-card:hover {
+	filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+}
+.service-card__icon {
+	margin: 0px 0px 33px 0px;
+}
+.service-card__title {
+	margin: 0px 0px 20px 0px;
+}
+.title-card-text {
+}
+.service-card__description {
+}
+.description-card-text {
+}
+.our-services__button {
+	width: 124px;
+	margin: 0px auto;
+}
+.button {
+}
+
+/* Четвертая секция */
+
+.our-impact {
+	padding: 112px 0px 134px 0px;
+	background: url('../img/section4/Blob-2.png') 79% 0 no-repeat, #29C3BE;
+}
+.our-impact__container {
+}
+.container {
+}
+.container_margin {
+}
+.our-impact__block-title {
+	display: inline-block;
+	max-width: 411px;
+	margin: 0px 0px 79px 0px;
+}
+.title-block {
+}
+.title-block__block-name {
+}
+.title-block__block-name_white {
+}
+.title-block__title {
+}
+.title-block__title_white {
+}
+.our-impact__image {
+	max-width: 498px;
+	border-radius: 40px;
+	margin: -192px 0 0 auto;
+	float: right;
+}
+.our-impact__list {
+	font-size: 0;
+}
+.impacts {
+}
+.impacts__item:not(:last-child) {
+	margin: 0px 24px 0px 0px;
+}
+.impact-card {
+	max-width: 237px;
+	display: inline-block;
+}
+.impact-card__logo {
+	margin: 0px 11px 0px 0px;
+}
+.impact-card__achievement-block {
+}
+.achievements {
+	display: inline-block;
+}
+.achievements__count {
+	width: 150px;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #FFFFFF;
+	margin: 0px 0px 3px 0px;
+}
+.achievement__description {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	color: #5D62B5;
+	text-transform: lowercase;
+}
